@@ -32,5 +32,36 @@ Software: [GNU GPL v3](./software/LICENSE-GPLv3.txt)
 
 ---
 
+Contributing
+Thank you for your interest in contributing to Coilonel Faraday’s Army! We welcome improvements, bug fixes, documentation updates, and new ideas from the community.
+
+To contribute, please follow these guidelines:
+
+Fork the repository and create your feature branch from main:
+
+css
+Copy
+Edit
+git checkout -b my-feature-branch
+Make your changes clearly and test thoroughly.
+
+Commit your changes with clear, descriptive commit messages.
+
+Push your branch to your fork:
+
+perl
+Copy
+Edit
+git push origin my-feature-branch
+Open a Pull Request against the main repository’s main branch.
+
+Please ensure your contributions comply with the CERN Open Hardware Licence v2.
+
+Be respectful and constructive in communication.
+
+If you want to discuss a larger feature or have questions, please open an issue first.
+
+Thanks for helping make this project better and safer!
+
 _Discretion advised: These instruments are not for the vulgar pursuit of power, but for the quiet empowerment of place._
 
