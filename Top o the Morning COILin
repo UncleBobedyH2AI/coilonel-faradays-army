@@ -1,0 +1,101 @@
+📁 /docs/
+├── README.md
+*High-level summary of Coilonel Faraday's Army and its mission.*
+
+├── overview.md
+*A plain-English description of how the system works and its Victorian-era inspiration.*
+
+├── blueprint-legends.md
+*Legend keys and descriptions for blueprint callouts (reference numerals, color codes, etc.).*
+
+├── calibration-procedures.md
+*Steps for tuning sensors, verifying mercury flow rates, and conducting safe tests.*
+
+├── deployment-notes.md
+*Instructions for AI-managed desert deployment, underground containment, and security.*
+
+├── lore.md
+*A whimsical in-universe background document describing the "discovered" design.*
+
+📁 /docs/blueprints/
+├── mechanical-overview_prompt.txt
+"Generate a top-down and side-profile blueprint of a toroidal energy harvester. The torus should be labeled with major radius (R = 0.5m), minor radius (r = 0.05m), and include components such as copper windings, magnetic segments, and flow channels. Use legible reference numbers only."
+
+├── fluidic-loop_prompt.txt
+"Illustrate the closed-loop mercury flow path inside a toroidal pipe, intersected by multiple magnetic zones. Add directional arrows showing convection/rotation-based motion. Include internal temperature buffering material zones."
+
+├── em-induction-schematic_prompt.txt
+"Render an electromagnetic schematic showing copper coil windings wrapped around a toroid, magnetic flux regions, and current flow. Label wire gauge (AWG 18), number of turns (N = 500), and approximate induced voltage per segment (0.25 V)."
+
+├── enclosure-cutaway_prompt.txt
+"Draw a sectional side-view of the entire underground installation. Include: layered containment structure (316L shell, vacuum cavity, steel armor), AI sensor suite (Jetson/Nvidia), cooling fins, antenna port, access hatch, and buried shielding dome." 
+
+📁 /hardware/3D_files/
+├── README.md
+*Placeholder folder for STL and STEP files of torus casing, bracket mounts, and coil frames.*
+
+📁 /hardware/laser_cut_patterns/
+├── pattern_notes.md
+*Notes on steel housing faceplates, cutout guides for sensor ports, and magnet housings.*
+
+📁 /software/control/
+├── sensor_interface.py
+```python
+# Reads data from thermal, capacitive, resistive sensors (Jetson AGX)
+# Converts raw values into standard format for MHD control unit
+```
+
+├── mhd_monitor.py
+```python
+# Monitors induced voltage and flow rate in mercury loop
+# Triggers log or fail-safe if abnormal readings are detected
+```
+
+├── fail_safe_trigger.py
+```python
+# AI-driven failsafe: shuts down coils and seals torus upon sensor trigger
+# Interfaces with pressure valves and AI override circuit
+```
+
+├── README.md
+*Describes control structure, how to initiate boot logic, and simulation testing.*
+
+📁 /calibration/
+├── mercury_flow_test.md
+*Describes using ultrasonic or magnetic Doppler sensors to verify target 0.5 m/s flow.*
+
+├── sensor_init_checklist.md
+*Boot-time check of all environmental and mercury sensors, including diagnostics.*
+
+├── shutdown_scenario_drill.md
+*Simulated breach test: tripping shutdown, containment sequence, and logging.*
+
+📁 /LICENSES/
+├── CERN-OHL-S-2.0.txt
+*Full official text from CERN site: https://gitlab.com/ohwr/project/cernohl/-/tree/master/licence_texts*
+
+📁 /project/
+├── CONTRIBUTING.md
+*How to contribute: forking, branch naming, issue format, AI model compatibility.*
+
+├── CHANGELOG.md
+*Version tracking beginning from v0.1.0-alpha.*
+
+├── SECURITY.md
+*Disclosure and response process for safety vulnerabilities (hardware/software).* 
+
+📄 bom.csv
+| Component | Qty | Description | Source | Unit Price | Total |
+|-----------|-----|-------------|--------|------------|-------|
+| 316L SS Toroid Tube | 10 | 0.5m R, 0.05m r | McMaster-Carr | $320 | $3200 |
+| Mercury (recycled) | 1050 kg | 7.85L per unit | Lab supplier | $65/kg | $68250 |
+| NdFeB Magnets | 80 | High-temp grade | K&J Magnetics | $12 | $960 |
+| Copper Wire | 10 kg | AWG 18, enamel | Digikey | $8/kg | $80 |
+| AI Controller (Jetson) | 10 | AGX Thor or DGX Spark | Nvidia | $850–$12,000 | $8500–$120,000 |
+| Graphite-Copper Heat Fins | 10 sets | Machined block fins | Custom | $160 | $1600 |
+| Pressure Valve System | 10 | With rupture disc | Swagelok | $75 | $750 |
+| Sensor Array | 10 sets | Capacitance, resistance, thermal | SparkFun | $200 | $2000 |
+| Shielding Material | 10 sets | Steel, ceramic, graphite | Industrial supplier | $300 | $3000 |
+| Housing Shell + Anchor | 10 | AI-access, buried | Fabricated | $500 | $5000 |
+| Misc. (PCB, wiring, fixings) | – | Fasteners, boards, adhesives | – | $800 | $800 |
+| **Estimated Total** | – | – | – | – | **$88,940–$200,440** |
