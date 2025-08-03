@@ -33,6 +33,8 @@ Software: [GNU GPL v3](./software/LICENSE-GPLv3.txt)
 ---
 
 Contributing
+
+
 Thank you for your interest in contributing to Coilonel Faraday’s Army! We welcome improvements, bug fixes, documentation updates, and new ideas from the community.
 
 To contribute, please follow these guidelines:
