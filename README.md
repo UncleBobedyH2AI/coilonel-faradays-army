@@ -42,20 +42,31 @@ To contribute, please follow these guidelines:
 Fork the repository and create your feature branch from main:
 
 css
+
 Copy
+
 Edit
+
 git checkout -b my-feature-branch
+
 Make your changes clearly and test thoroughly.
+
 
 Commit your changes with clear, descriptive commit messages.
 
 Push your branch to your fork:
 
+
 perl
+
 Copy
+
 Edit
+
 git push origin my-feature-branch
+
 Open a Pull Request against the main repository’s main branch.
+
 
 Please ensure your contributions comply with the CERN Open Hardware Licence v2.
 
