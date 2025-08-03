@@ -49,6 +49,8 @@ Edit
 
 git checkout -b my-feature-branch
 
+
+
 Make your changes clearly and test thoroughly.
 
 
@@ -65,10 +67,14 @@ Edit
 
 git push origin my-feature-branch
 
+
+
 Open a Pull Request against the main repository’s main branch.
 
 
 Please ensure your contributions comply with the CERN Open Hardware Licence v2.
+
+
 
 Be respectful and constructive in communication.
 
