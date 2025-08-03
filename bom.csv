@@ -1,0 +1,16 @@
+## 📄 bom.csv
+
+```
+Component,Qty,Description,Source,Unit Price,Total
+316L SS Toroid Tube,10,0.5m R, 0.05m r,McMaster-Carr,$320,$3200
+Mercury (recycled),1050 kg,7.85L per unit,Lab supplier,$65/kg,$68250
+NdFeB Magnets,80,High-temp grade,K&J Magnetics,$12,$960
+Copper Wire,10 kg,AWG 18, enamel,Digikey,$8/kg,$80
+AI Controller (Jetson),10,AGX Thor or DGX Spark,Nvidia,$850–$12,000,$8500–$120000
+Graphite-Copper Heat Fins,10 sets,Machined block fins,Custom,$160,$1600
+Pressure Valve System,10,With rupture disc,Swagelok,$75,$750
+Sensor Array,10 sets,Capacitance, resistance, thermal,SparkFun,$200,$2000
+Shielding Material,10 sets,Steel, ceramic, graphite,Industrial supplier,$300,$3000
+Housing Shell + Anchor,10,AI-access, buried,Fabricated,$500,$5000
+Misc. (PCB, wiring, fixings),–,Fasteners, boards, adhesives,–,$800,$800
+Estimated Total,–,–,–,–,$88,940–$200,440
